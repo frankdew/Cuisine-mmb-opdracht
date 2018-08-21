@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/eigentijdse-wildgerechten.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3, minimum-scale=1.0, user-scalable=yes">
+<title>Boeken | Cuisine</title>
+<link href="./Boeken _ Cuisine_files/css" rel="stylesheet">
+<link rel="stylesheet" href="./Boeken _ Cuisine_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./Boeken _ Cuisine_files/animate.css"> <!-- animate.css  -->
+<link href="./Boeken _ Cuisine_files/reset.css" rel="stylesheet" type="text/css"> <!-- reset eric Meyer  -->
+<link href="./Boeken _ Cuisine_files/main.css" rel="stylesheet" type="text/css"> <!-- eigen css en media queries  -->
+<link rel="stylesheet" type="text/css" href="./Boeken _ Cuisine_files/small-mobile.css">
+<link rel="stylesheet" type="text/css" href="./Boeken _ Cuisine_files/larger-mobiles.css">
+<link rel="stylesheet" type="text/css" href="./Boeken _ Cuisine_files/tablet-portrait.css">
+<link rel="stylesheet" type="text/css" href="./Boeken _ Cuisine_files/larger-tablet.css">
+<link rel="stylesheet" type="text/css" href="./Boeken _ Cuisine_files/desktop.css">
+</head>
+   <body>
+
+    <header>
+      <nav>
+        <div id="topNav">
+          <div class="toggle" onclick="myFunction(this)"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div> <!-- van 'hamburger' naar X -->
+          <div class="logo-chef"><a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/index.html"><img src="./Boeken _ Cuisine_files/cuisine-chef-white.svg" alt="Cuisine logo" title="Cuisine logo"></a></div> <!-- logo voor kleine devices -->
+          <div class="container">
+          <div class="logo-chefBig"><a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/index.html"><img src="./Boeken _ Cuisine_files/cuisine-logo-blue.svg" alt="Cuisine logo" title="Cuisine logo"></a></div> <!-- logo voor de grotere devices -->
+          <div class="bedrijfsNaam">
+            <h1>Cuisine</h1>
+            <h3>Kookboeken Uitgeverij</h3>
+          </div>
+        </div>
+        </div>
+
+        <div class="navBar"><!-- Het inline menu voor de grotere devices -->
+          <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/index.html"><img id="thuis" src="./Boeken _ Cuisine_files/home.svg" alt="home" title="home"></a>
+
+          <ul id="menuInline">
+            <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/boeken.html"><li class="active"><span>Boeken</span></li></a>
+            <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/workshops.html"><li><span>Workshops</span></li></a>
+            <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/webinars.html"><li><span>Webinars</span></li></a>
+            <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/contact.html"><li><span>Contact</span></li></a>
+            <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/cadeaubon.html"><li><span>Cadeaubon</span></li></a>
+          </ul> 
+          <form id="search" action="file:///action_page.php"><input type="text" id="searchBar" placeholder="Search.." name="search"><button id="searchIcon" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></form> <!-- 'Search bar' optie -->
+        </div>
+
+        <!-- Het hamburger menu voor de kleinere devices komt tevoorschijn onder het searchbar gedeelte-->
+        <ul id="menu"> <!-- elk listitem komt van een andere kant binnen via animate.css -->
+          <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/eigentijdse-wildgerechten.html#"><li class="animated bounceInLeft"><span>Boeken</span></li></a>
+          <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/workshops.html"><li class="animated bounceInRight"><span>Workshops</span></li></a>
+          <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/webinars.html"><li class="animated bounceInLeft"><span>Webinars</span></li></a>
+          <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/pages/inlog.html"><li class="animated bounceInRight"><span>Inloggen/Registreren</span></li></a>
+          <a href="file:///Users/frankdewolf/Code/CMM/front-end/opdrachten/eind-opdracht/mmb-2/pages/cadeaubon.html"><li class="animated bounceInLeft"><span>Cadeaubon</span></li></a>
+        </ul> 
+      </nav>
+    </header>
+
+     <h1 class="paginatitel" style="background-color: rgba(255, 255, 255, 0.5);"><span class="naam" style="color: rgb(234, 161, 26);">Kookboek</span>: Het Wild Kookboek</h1>
+
+    <article id="articleWrapper">
+			<img class="boekAfb" src="./Boeken _ Cuisine_files/wild-kookboek-groot.jpg" alt="wildgerechten kookboek" title="wildgerechten kookboek">
+			<div class="beschrijvingBoek">
+				<p>Hazenrug, fazantenbout, een wildzwijnhammetje of duivenborst.</p> 
+				<p>Voor dit boek reisde culinair journalist Jacques Hermus langs jagers en wildslagers, langs chefs en wijnmakers.</p><p> In de Achterhoek, één van de mooiste streken van ons land, tekende hij recepten op van twintig chef-koks.</p><br> <p>Met een boek vol inspirerende recepten en boeiende verhalen als resultaat.</p><p> Over de soorten wild in ons land, jachttechnieken en jagersrituelen, paddenstoelen, bessen, noten en kruiden. Waar koop je het beste wild? Hoe maak je een krachtige wildsaus en houd je het vlees mals en smakelijk? 'Het Wildkookboek' geeft antwoord op al deze vragen.</p>
+			</div>
+		</article>
+
+		<div><!-- 'Back-to-top' komt na scroll te voorschijn en verdwijnt wanneer aan'top' d.m.v. js -->
+			<img id="omhoogPijl" src="./Boeken _ Cuisine_files/omhoog-pijl.svg" alt="terug" title="Naar top!" style="display: inline;">
+		</div>
+
+    <footer id="footer">
+      <div class="container">
+      <div id="mediaIcons"></div>
+      <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist"><h3 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Contact</h3><div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;"><p>☏: 072 128 96 73</p><p>E-mail: info@cuisine-uitgeverij.com</p><p>Adres: Landstraat 110</p><p>1814 BC ALKMAAR</p></div><h3 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Over ons</h3><div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;"><p>Cuisine heeft een groot assortiment aan kookboeken, kook-workshops en live kook-webinars. Voor al uw prive of zakelijke aanvragen kunt u bij ons terecht, wij zijn u graag van dienst.</p></div></div>  <!-- Accodion met contact- en over ons gegevens voor mobiel -->
+      <div id="copyright"></div>
+      <div class="container">
+    </div></div></footer>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+    <script src="./Boeken _ Cuisine_files/jquery-3.2.1.min.js"></script>
+    <script src="./Boeken _ Cuisine_files/jquery-ui.min.js"></script>
+    <script src="./Boeken _ Cuisine_files/jquery.ui.touch-punch.min.js"></script>
+    <script src="./Boeken _ Cuisine_files/jquery.aniview.js"></script>
+    <script src="./Boeken _ Cuisine_files/skippr.js"></script>
+    <script src="./Boeken _ Cuisine_files/boeken-database.json"></script>
+    <script src="./Boeken _ Cuisine_files/script.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+</body></html>

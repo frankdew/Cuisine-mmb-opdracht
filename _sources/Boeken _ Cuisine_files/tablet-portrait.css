@@ -1,0 +1,288 @@
+/*********************************************************
+									TABLET(PORTRAIT)
+*********************************************************/
+@media screen and (min-width: 800px){  /* kleine extra query stap om het vloeiend te laten overlopen */
+	#boekenWrapper a{
+		min-height: 25rem;
+	}
+}
+/*********************************************************/
+@media screen and (min-width: 768px){
+	.container{
+		padding: 0;
+		margin: 0 auto;
+		width: 767px;  /* Class container gebruiken vanaf en bij deze min-width */
+	}
+	.logo-chef{
+		display: none;
+	}
+	.logo-chefBig{
+		display: block;
+		width: 14%;
+		float: left;
+		margin: 1% 8% 1% 0;
+	}
+	.bedrijfsNaam{
+		width: 52%;
+		float: left;
+		padding: 8% 0 0 0;
+	}
+	.bedrijfsNaam h1{  /* Bedrijfsnaam */
+		font-size: 2.9rem;
+		letter-spacing: 2px;
+		display: inline;
+		padding-right: 1%;
+	}
+	.bedrijfsNaam h3{  /* Soort bedrijf */
+		font-size: 0.9rem;
+		padding: 1% 0 0 0;
+		letter-spacing: 1px;
+		display: inline;
+	}
+	.toggle{
+		display: none;
+	}
+	#thuis, #thuisHome{
+		width: 4.5%;
+	}
+	.pageTitle{
+		display: none;
+	}
+	#menuInline{ /* Het inline navigatiemenu */
+		float: left;
+		padding: 1% 0;
+		width: 70%;
+		display: inline-block;
+	}
+	#menuInline li{
+		padding: 2% 0 2% 0;
+		margin: 1.2%;
+		background-color: initial;
+		border:  none;
+		display: inline;
+		font-size: 1.2rem;
+	}
+	#menuInline a li:hover{
+		text-shadow: -1px 3px 5px black;
+		font-weight: 700;
+		font-style: italic;
+		text-decoration: underline;
+		-webkit-text-decoration-color: #fff;
+		text-decoration-color: #fff;
+		text-underline-position: under;
+	}
+	#menuInline a li.active{
+		text-shadow: -1px 3px 5px black;
+		font-weight: 700;
+		color: #efa717;
+		font-style: italic;
+		text-decoration: underline;
+		text-decoration-color: #fff;
+		text-underline-position: under;
+	}
+	.navBar{
+		padding: 1%;
+	}
+	#search{  /* Het 'form' element */
+		margin: 0 0 0 73%;
+		width: 23%;
+		padding: 0.2% 0 0 0.2%;
+	}
+	#searchIcon{
+		font-size: 1.2rem;
+		padding-top: 0;
+	}
+	#searchBar{  /* Inputveld van de searchbar */
+		width: 80%;
+		font-size: 1rem;
+	}
+	#omhoogPijl {
+	  position: fixed;
+	  bottom: 20px;
+	  right: 15px;
+	  z-index: 99;
+	  cursor: pointer;
+	  width: 45px;
+	}
+	#accordion{
+		display: none;
+	}
+	ul#contactgegevens li:nth-child(3) a, ul#contactgegevens li:nth-child(4) a, ul#contactgegevens li:first-child a{
+		text-decoration: none;
+		color: rgba(104,79,64, 1);
+	}
+	ul#contactgegevens li:first-child:before{
+		content: " \01F4DE";
+	}
+	ul#contactgegevens li:nth-child(3):before{
+		content: " \01F4E7";
+		font-size: 1.4rem;
+		color: rgba(104,79,64, 1);
+	}
+	ul#contactgegevens li:nth-child(3) a, ul#contactgegevens li:first-child a{
+		padding-left: 2%; 
+	}
+	footer #mediaIcons{
+		background-color: rgba(96,168,71, 1);
+	}
+	footer #copyright{
+		background-color: rgba(96,168,71, 0.8);
+	}
+	.mainWrapper h1{
+		font-size: 5rem;
+		padding-top: 15%;
+	}
+	.mainWrapper h2{
+		font-size: 3rem;
+	}
+	#boekenWrapper a{
+		width: 30%;
+		margin: 0 1rem 1rem 0;
+		min-height: 25rem;
+	}
+	#boekenWrapper{
+		width: 75%;
+	}
+	#boeken aside{
+		width: 22%;
+	}
+	#boeken h1{
+		font-size: 2.2rem;
+	}
+
+	/*********************************************************
+									SUB-BOEKEN PAGINA
+	*********************************************************/
+
+	.paginatitel{
+		font-size: 2.2rem;
+	}
+	.beschrijvingBoek p{
+		line-height: 2rem;
+		letter-spacing: 0.8px;
+		font-size: 1.1rem;
+	}
+	/*********************************************************
+									CONTACT PAGINA
+	*********************************************************/
+	#contactWrapper{
+		margin: 2% 2% 0 4%;
+		overflow: hidden;
+	}
+	#contact{
+		float: left;
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1rem;
+		margin: 3.5% 2% 2% 0;
+		line-height: 1.4rem;
+		border-bottom: 1px solid rgba(96,168,71, 1);
+		border-left: 1px solid rgba(96,168,71, 1);
+		border-radius: 8px;
+		box-shadow: -6px 6px 8px #ccc;
+		color: rgba(104,79,64, 0.8);
+	}
+	#contact h2{
+		font-size: 1.2rem;
+		font-weight: 500;
+		font-family: 'Work Sans', sans-serif;
+		padding: 4% 4% 4% 4%;
+	}
+	#contact address{
+		padding: 0 0 4% 4%;
+	}
+	#formulier{
+		width: 56%;
+		overflow: hidden;
+		float: right;
+		margin-right: 1%;
+	}
+	 #contactForm{
+		padding: 1% 0 0 1.5%;
+		float: right;
+		font-size: 1.1rem;
+		font-weight: 500;
+		font-family: 'Work Sans', sans-serif;
+	}
+	form#contactForm legend{
+		font-size: 1.2rem;
+		padding: 3%;
+		margin: 0 auto;
+		font-family: 'Work Sans', sans-serif;
+		color: rgba(104,79,64, 0.8);
+	}
+	form#contactForm label{ 
+		display: inline-block; 
+		padding: 0.3rem; 
+		margin: 0 0 0.7rem 0; 
+		font-family: 'Work Sans', sans-serif;
+		color: rgba(104,79,64, 0.8);
+	}
+	form#contactForm input[type="text"], input[type="email"]{ 
+		width: 300px; 
+		padding: 0.5rem; 
+		margin: 0 1rem 0.7rem 0;
+		font-family: 'Work Sans', sans-serif;
+		color: rgba(104,79,64, 0.8);
+	}
+	form#contactForm input[type="submit"]{
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1rem;
+		color: rgba(104,79,64, 1);
+		background-color: rgba(96,168,71, 1);
+		border-radius: 4px;
+	}
+	form#contactForm input[type="submit"]:hover{
+		box-shadow: -2px 2px 3px;
+	}
+	select option{
+		font-family: 'Work Sans', sans-serif;
+		color: green;
+	}
+	.knop{
+		padding: 6% 0;
+	}
+	form#contactForm fieldset{ 
+		padding: 2% 0 0 10%;
+		border: 1px solid rgba(96,168,71, 1);
+		border-radius: 8px;
+		margin: 0 auto 15% 0; 
+		box-shadow: -6px 6px 8px #ccc;
+	}
+	textarea{
+		color: rgba(104,79,64, 0.8);
+		padding: 3% 0 0 3%;
+		font-family: 'Work Sans', sans-serif;
+		margin-top: 2%;
+	}
+	iframe{
+		float: left;
+		width: 300px; 
+		border: 2px solid rgba(96,168,71, 1);
+		border-radius: 8px;
+		margin: 6.5% 0 10% 0;
+		box-shadow: -6px 6px 8px #ccc;
+	}
+
+/*********************************************************
+							VIDEO & CONTROLS STYLING
+**********************************************************/
+	.container .smallVideo{
+		float: left;
+	}
+	.vjs-matrix button.vjs-big-play-button {
+		border: 0.1rem solid #F7A41A;
+		height: 3.3rem;
+	}
+	.vjs-matrix .vjs-icon-placeholder {
+		color: #F7A41A
+	}
+	.vjs-matrix button.vjs-big-play-button:hover {
+		border: 0.3rem solid rgba(104,79,64, 0.7);
+	}
+	.vjs-matrix .vjs-icon-placeholder:hover {
+		color: rgba(104,79,64, 0.7);
+	}
+
+}
+
+

@@ -1,0 +1,520 @@
+@charset "UTF-8";
+* {
+	/* De width en height worden berekend aan de hand van content, INCLUSIEF eventuele extra padding en border eigenschappen. */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+html {
+	font-size: 100%;  /* Font-size van het root-element opgeven, zodat we kunnen rekenen met de REM-unit. */
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgba(239,235,216, 1);
+}
+header nav{
+	width: 100%;
+	background-color: rgba(104,79,64, 1);
+}
+header nav ul{
+	width: 100%;
+	margin: 0 auto;
+	display: none;  /* Voor de toggle te beginnen uit het zicht */
+}
+#menu{  /* Navigatie 'list' */
+	position: absolute;  /* Absolute en z-index om over de onderliggende pagina onderdelen heen te gaan */
+	z-index: 99999;
+}
+header nav ul li{
+	list-style-type: none;
+	width: 100%;
+	padding: 4% 4% 4% 35%;
+	border-bottom: 1px solid #000;
+	background-color: rgba(96,168,71, 1);
+	text-align: left;
+	font-size: 1.1rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+header nav ul a{
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: -2px 2px 3px rgba(123,123,117, 1);
+}
+header nav ul a:hover{
+	color: rgba(247,164,26, 1);
+}
+header nav ul li:hover{
+		background-color: rgba(96,168,71, 0.7);
+}
+#topNav{
+	overflow: hidden;
+}
+.toggle{  /* Hamburger menu */
+	display: inline-block;
+	float: left;
+	padding: 4% 0 2% 2%;
+	cursor: pointer;
+}
+.bar1, .bar2, .bar3 {  /* Strepen van het hamburger menu */
+  width: 2.19rem;
+  height: 0.31rem;
+  background-color: #ffffff;
+  margin: 0.37rem 0;
+  border-radius: 0.19rem;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-0.56rem, 0.38rem);
+  transform: rotate(-45deg) translate(-0.56, 0.38rem);
+}
+.change .bar2 {
+	opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0.5rem, -0.5rem);
+  transform: rotate(45deg) translate(-0.5rem, -0.5rem);
+}
+.bedrijfsNaam{  /* Bedrijfsnaam in topNav */
+	float: left;
+	padding: 6% 0 0 8%;
+}
+.bedrijfsNaam h1{  /* Bedrijfsnaam */
+	font-size: 1.4rem;
+	font-weight: 500;
+	font-family: 'Work Sans', sans-serif; 
+	color: rgba(247,164,26, 1);
+	letter-spacing: 1px;
+}
+.bedrijfsNaam h3{  /* Soort bedrijf */
+	font-size: 0.7rem;
+	font-weight: 400;
+	font-family: 'Work Sans', sans-serif; 
+	padding: 1% 0 6% 0;
+	color: #ffffff;
+}
+.logo-chef{
+	width: 13%;
+	float: right;
+	margin: 3% 22% 1% 0;
+}
+.logo-chefBig{
+	display: none;
+}
+#winkelwagen{
+	width: 5%;
+	display: inline-block;
+}
+.dropdown span{
+	font-size: 0.8rem;
+	font-family: 'Work Sans', sans-serif;
+}
+.dropdown{
+	border: 1px solid #fff;
+	float: left;
+}
+.navBar{  /*  Groene header met searchbar */
+	clear: left;
+	background-color: rgba(96,168,71, 1);
+	padding: 2%;
+	width: 100%; 
+	box-shadow: 0 4px 2px #cccccc;													
+}
+#thuis, #thuisHome{
+	width: 9%;
+	float: left;
+	padding-top: 1%;
+}
+.pageTitle{
+	text-shadow: -1px 3px 5px black;
+	font-weight: 700;
+	color: #efa717;
+	font-size: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	padding: 1.5% 3% 0 3%;
+	float: left;
+}
+#searchBar{  /* Inputveld van de searchbar */
+	float: left;
+	width: 78%;
+	margin: 2% 0 2% 2%;
+	border: none;
+	border-radius: 4px;
+	padding: 2%;
+	outline: none;
+}
+#searchIcon{		/* Button 'search icon' rechts van het zoekveld */
+	float: left;
+	padding: 2% 0 0 2%;
+	font-size: 1rem;
+	border: none;
+	background-color: lightgrey;
+	margin: 2% 0 2% 4%;
+	cursor: pointer;
+	outline: none;
+}
+#search{  /* Het 'form' element */
+	margin-left: 50%;
+	width: 50%;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: lightgrey;
+}
+#homePageImg{
+	background-image: url('../images/meat-dish.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	box-shadow: 12px 0 15px -4px rgba(143, 141, 141, 0.8), -12px 0 8px -4px rgba(143, 141, 141, 0.8);
+}
+.mainWrapper{
+	text-align: center;
+	color: rgba(0,0,0, 0.7);
+	font-weight: 700;
+	font-family: 'Work Sans', sans-serif; 
+}
+.mainWrapper h1{
+	font-size: 2.5rem;
+	word-spacing: 0.2rem; 
+	letter-spacing: 2px;
+	padding-bottom: 1rem;
+	padding-top: 25%;
+	font-style: italic;
+	text-shadow: -2px 2px 4px #fff;
+}
+.mainWrapper h2{
+	font-size: 2rem;
+	word-spacing: 0.2rem; 
+	letter-spacing: 2px;
+	font-style: italic;
+	color: rgba(255,255,255, 0.7);
+	text-shadow: -2px 2px 4px #000;
+}
+
+/******************** TO TOP PIJL ********************/
+#omhoogPijl {
+	display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  z-index: 99;
+  cursor: pointer;
+  width: 35px;
+}
+/******************** Footer icons ********************/
+#mediaIcons{
+	padding: 4%;
+	background-color: rgba(96,168,71, 1);
+}
+/****************** Footer Accordion ********************/
+#accordion{
+	width: 100%;
+	color: white;
+	overflow: visible;
+	text-align: center;
+}
+.ui-accordion-header{
+	font-size: 400;
+	font-family: 'Work Sans', sans-serif;
+	padding: 2%;
+}
+.ui-accordion-content{
+	font-size: .8rem;
+	padding: 2%;
+	background-color: rgba(83,83,83, 1);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.2rem;
+}
+#ui-id-1{  
+	background-color: #684F40;
+}
+#accordion #ui-id-1:hover{  
+	background-color: #A87E65;
+}
+#ui-id-3{
+	background-color: #684F40;
+}
+#accordion #ui-id-3:hover{  
+	background-color: #A87E65;
+}
+#accordion p{
+	padding: 2%;
+	background-color: rgba(83,83,83, 1);
+	font-size: .8rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+
+/****************** Footer Copyright ********************/
+#footer{
+	position: static;
+}
+footer{
+  width: 100%;
+  clear: both;
+  background-color: rgba(96,168,71, 1);
+}
+#footer {
+	height: 10%;
+	position:relative;
+	margin-top: 90vh;
+}
+#copyright{
+	padding: 1%;
+	background-color: rgba(96,168,71, 1);
+}
+
+/*********************************************************
+									BOEKEN PAGINA
+*********************************************************/
+#boekenWrapper{
+	float: right;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0 0.2rem 0.5rem 0.8rem;
+}
+#boekenWrapper img{
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: 1% auto; 
+}
+#boekenWrapper a p{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0.8rem;
+	color: rgba(104,79,64, 1);
+	padding: 10% 4%; 
+	text-align: left;
+}
+#boekenWrapper a{
+	float: left;
+	box-sizing: border-box;
+	width: 90%;
+	padding: 1rem;
+	border: 0.5px solid rgba(96,168,71, 0.4);
+	border-radius: 4px;
+	text-decoration: none;
+	text-align:center;
+	margin: 0 0.5rem 0.5rem 0;
+	min-height: 20rem;
+}
+#boekenWrapper a:hover{
+	border: none;
+	background-color: rgba(248,181,56, 0.9);
+	box-shadow: -3px 3px 5px rgba(55,55,55, 0.5);
+}
+#boekenWrapper a h2{
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	color: rgba(104,79,64, 1);
+	padding-bottom: 8%;
+	line-height: 1.2rem;
+}
+#boeken{
+	text-align: center;
+}
+.paginatitel{  /* pagina titel */
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	color: rgba(104,79,64, 1);
+	font-style: italic;
+	font-size: 1.6rem;
+	padding: 4% 0 4% 0;
+	text-align: center;
+}
+#hideText{   /* pdf fallback voor gebruikers die geen js hebben geinstalleerd */
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #cccccc;
+	padding: 2%;
+	border: 2px solid rgba(247,164,26, 1);
+	margin-bottom: 10%;
+	letter-spacing: 1px;
+	line-height: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	font-size: 0.9rem;
+	display: none;
+}
+#boeken aside{
+	float: left;
+	text-align: center;
+	width: 48%;
+	padding: 1%;
+	border: 1.5px solid rgba(96,168,71, 1);
+	border-radius: 4px;
+	margin: 0 0 4% 2%;
+}
+#boeken aside form{
+	padding: 3%;
+}
+#boeken aside fieldset{
+	border: 0;
+	padding: 0;
+}
+#boeken aside legend{
+	padding: 0;
+	text-align: left;
+	margin: 2% 0;
+	font-size: 1.3rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	color: rgba(104,79,64, 1);
+}
+#boeken aside label{
+	display: block;
+	padding: 4vh 0 1vh 0;
+	font-size: 1rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	color: rgba(104,79,64, 1);
+}
+#boeken aside form div{
+	font-size: 0.8rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	text-align: left;
+	color: rgba(104,79,64, 1);
+}
+
+/*********************************************************
+							IMAGE 'HOME PAGINA' TITEL STYLES
+**********************************************************/
+	.imageText{
+		color: #fff;
+		text-align: center;
+		margin: 53% auto;
+		font-size: 1.2rem;
+		text-shadow: -1px 1px 2px rgba(83,83,83, 1);
+		font-family: 'Homemade Apple', cursive, sans-serif;
+	}
+
+/*********************************************************
+				STYLING SUBPAGINA'S VAN BOEKEN PAGINA
+**********************************************************/
+.terug img{
+	width: 40px;
+	margin: 1%;
+}
+.boekAfb p{
+	display: none;
+}
+.boekAfb{
+	width: 70%;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin: 0 0 5% 15%;
+}
+.beschrijvingBoek{
+	width: 70%;
+	text-align: left;
+	margin: 6% 0 0 15%;
+}
+.beschrijvingBoek p{
+	line-height: 1rem;
+	letter-spacing: 1px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.7rem;
+}
+.paginatitel{
+	font-size: 1.2rem;
+}
+
+
+/*********************************************************
+							VIDEO & CONTROLS STYLING
+**********************************************************/
+.container .smallVideo{
+/*	float: left;
+*/	margin: 4% auto;
+		width: 298px;
+		height: 168px;
+}
+.vjs-poster{
+	box-shadow: -3px 4px 5px rgba(0,0,0, 0.6);
+}
+.vjs-matrix button.vjs-big-play-button {
+	border: 0.1rem solid #F7A41A;
+	height: 3.3rem;
+	margin-top: 0;
+}
+.vjs-matrix .vjs-icon-placeholder {
+	color: #F7A41A
+}
+.vjs-matrix button.vjs-big-play-button:hover {
+	border: 0.3rem solid rgba(104,79,64, 0.7);
+}
+.vjs-matrix .vjs-icon-placeholder:hover {
+	color: rgba(104,79,64, 0.7);
+}
+
+/*********************************************************
+							ANIMATIE STYLING WORKSHOPS PAGINA
+**********************************************************/
+#animation_container, #_preload_div_ {
+	position:absolute;
+	margin: 0 auto 10% auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+  #animation_container{
+  	margin-top: 35%;
+  }
+ #afsluiten{
+ 	text-align: right;
+ 	margin: 5px;
+ }
+ .fa-times{
+ 	color: #fff;
+ 	cursor: pointer;
+ }
+ #animation_container{
+ 	background-color:rgba(86, 86, 86, 1.00);
+ 	width:650px; 
+ 	height:320px
+ }
+ #canvas{
+ 	width:650px;
+ 	height: 320px;
+ 	position: absolute; 
+ 	display: none; 
+ 	background-color:rgba(86, 86, 86, 1.00);
+ }
+ #dom_overlay_container{
+ 	pointer-events:none; 
+ 	overflow:hidden; 
+ 	width:650px; 
+ 	height:320px; 
+ 	position: absolute; 
+ 	left: 0px; 
+ 	top: 0px; 
+ 	display: none;
+ }
+ #_preload_div_{
+	position:absolute; 
+	top:0; 
+	left:0; 
+	display: inline-block; 
+	height:320px; 
+	width: 650px; 
+	text-align: center;
+ }
+#_preload_div_ > span{
+	display: inline-block; 
+	height: 100%; 
+	vertical-align: middle;
+}
+#_preload_div_ img{
+	vertical-align: middle; 
+	max-height: 100%;
+}
+

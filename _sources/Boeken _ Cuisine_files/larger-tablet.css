@@ -1,0 +1,165 @@
+/*********************************************************
+									LARGER TABLET(LANDSCPE)
+*********************************************************/
+@media screen and (min-width: 980px){
+	.container{
+		width: 979px; /* Class container gebruiken bij deze min-width */
+	}
+	#searchIcon{
+		font-size: 1.4rem;
+		padding-top: 0;
+	}
+	#menuInline{ /* Het inline navigatiemenu */
+		width: 70%;
+		padding-left: 1%;
+	}
+	#menuInline li{
+		padding: 2% 0 1% 0;
+		font-size: 1.4rem;
+	}
+	#menuInline a li:hover{
+		text-shadow: -1px 5px 7px black;
+	}
+	.bedrijfsNaam{
+		padding-top: 9%;
+	}
+	.bedrijfsNaam h1{  /* Bedrijfsnaam */
+		font-size: 3.4rem;
+		letter-spacing: 1px;
+	}
+	.bedrijfsNaam h3{  /* Soort bedrijf */
+		font-size: 1.2rem;
+	}
+	.mainWrapper h1{
+		font-size: 6rem;
+		padding-top: 15%;
+	}
+	.mainWrapper h2{
+		font-size: 4rem;
+	}
+	#boeken h1{
+		font-size: 2.5rem;
+	}
+	#boekenWrapper a{
+		min-height: 28.5rem;
+	}
+
+	/*********************************************************
+									BOEKEN SUB-PAGINA
+	*********************************************************/
+	.boekAfb{
+
+	}
+	#articleWrapper{
+		overflow: hidden;
+	}
+	.boekAfb{
+		width: 45%;
+		margin: 4% 0 5% 5%;
+		border: 1px solid red;
+	}
+	.beschrijvingBoek{
+
+	}
+	.beschrijvingBoek p{
+		font-size: 1rem;
+		width: 35%;
+		float: left;
+		margin: 6% 0 0 5%;
+	}
+	.beschrijvingBoek p{
+		line-height: 1.2rem;
+		letter-spacing: 0.8px;
+		font-size: 1.1rem;
+	}
+
+	/*********************************************************
+									CONTACT PAGINA
+	*********************************************************/
+	#contactWrapper{
+		margin: 2% 0;
+	}
+	#contact{
+		float: left;
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1rem;
+		margin: 3% 0 2% 3%;
+		line-height: 1.4rem;
+		border-bottom: 1px solid rgba(96,168,71, 1);
+		border-left: 1px solid rgba(96,168,71, 1);
+		border-radius: 8px;
+		box-shadow: -6px 6px 8px #ccc;
+		color: rgba(104,79,64, 0.8);
+	}
+	#contact h2{
+		font-size: 1.2rem;
+		font-weight: 500;
+		font-family: 'Work Sans', sans-serif;
+		padding: 4% 4% 4% 4%;
+	}
+	#contact address{
+		padding: 0 0 4% 4%;
+	}
+	#formulier{
+		margin-right: 5%;
+		width: 57%;
+	}
+	 #contactForm{
+		padding: 1% 0 2% 1%;
+		font-size: 1.1rem;
+		font-weight: 500;
+		font-family: 'Work Sans', sans-serif;
+	}
+	form#contactForm legend{
+		font-size: 1.3rem;
+		padding: 1%;
+		margin: 0 auto;
+		font-family: 'Work Sans', sans-serif;
+		color: rgba(104,79,64, 0.8);
+	}
+	form#contactForm label{ 
+		float: left;
+		display: inline-block; 
+		padding: 0.3rem; 
+		margin: 0 0 0.7rem 2%; 
+		font-family: 'Work Sans', sans-serif;
+		color: rgba(104,79,64, 0.8);
+	}
+	form#contactForm input[type="text"], input[type="email"]{ 
+		width: 300px; 
+		padding: 0.5rem; 
+		margin: 0 0 0.7rem 2%;
+		color: rgba(104,79,64, 0.8);
+	}
+	form#contactForm input[type="submit"]{
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1rem;
+		color: rgba(104,79,64, 1);
+		background-color: rgba(96,168,71, 1);
+		border-radius: 4px;
+	}
+	form#contactForm input[type="submit"]:hover{
+		box-shadow: -2px 2px 3px;
+	}
+	#knop{
+		padding: 7% 0;
+	}
+	form#contactForm fieldset{ 
+		padding: 2% 0 0 10%;
+		border: 1px solid rgba(96,168,71, 1);
+		border-radius: 8px;
+		margin: 0 auto 15% 0; 
+		box-shadow: -6px 6px 8px #ccc;
+	}
+	textarea{
+		color: rgba(104,79,64, 0.8);
+		padding: 3% 0 0 3%;
+		font-family: 'Work Sans', sans-serif;
+	}
+	iframe{
+		margin: 3.5% 0 0 3%;
+	}
+
+
+
+}

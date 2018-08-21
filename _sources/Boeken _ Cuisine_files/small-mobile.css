@@ -1,0 +1,29 @@
+/*********************************************************
+										SMALL MOBILE PHONE
+*********************************************************/
+@media screen and (min-width:430px){
+	.logo-chef{
+		width: 12%;
+		float: right;
+		margin: 1% 30% 1% 0;
+	}
+	.bedrijfsNaam{  
+		padding: 4% 0 0 15%;
+	}
+	#thuis, #thuisHome{
+		padding-top: 0;
+	}
+	#search{
+		width: 40%;
+		margin-left: 47%;
+	}
+	#boeken aside{
+		width: 40%;
+	}
+	#boekenWrapper{
+		width: 57%;
+	}
+	#boeken h1{
+		font-size: 1.8rem;
+	}
+}
